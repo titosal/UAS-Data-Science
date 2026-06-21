@@ -4,7 +4,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
 # Load the original data
-df = pd.read_csv('ulasan_gacoan_tanggal.csv')
+df = pd.read_csv('ulasan_gacoan_tanggal_jak_boul.csv')
 
 # Clean the text
 def clean_text(text):

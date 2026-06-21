@@ -8,7 +8,7 @@ options.add_argument('--lang=id')
 options.add_argument("accep-language-id-ID,id")
 driver = webdriver.Chrome(options=options)
 
-driver.get("https://www.google.com/maps/place/Mie+Gacoan+Samarinda+-+Ahmad+Yani/@-0.4778271,117.1379684,15z/data=!4m12!1m2!2m1!1sgacoan!3m8!1s0x2dfd1dc37b987d41:0xe4143a2500b3993c!8m2!3d-0.4778271!4d117.1570228!9m1!1b1!15sCgZnYWNvYW4iA4gBAVoIIgZnYWNvYW6SAQtub29kbGVfc2hvcJoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQyMDBNV0pyUmpCT2EyOTBWRlpTTW1WV1VtOVVWbGwzV201U1RsTllZeEFC4AEA-gEECAAQRA!16s%2Fg%2F11wfv88n38?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D")
+driver.get("https://www.google.com/maps/place/Mie+Gacoan+Jakarta+-+Boulevard+Kelapa+Gading/@-6.2069936,106.8275253,17401m/data=!3m1!1e3!4m12!1m2!2m1!1sgacoan!3m8!1s0x2e69f5001da6fcf1:0x71d23459eef6582b!8m2!3d-6.1757353!4d106.8956292!9m1!1b1!15sCgZnYWNvYW4iA4gBAVoIIgZnYWNvYW6SAQtub29kbGVfc2hvcOABAA!16s%2Fg%2F11wxfhyg10?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D")
 time.sleep(750)
 
 try:
@@ -53,6 +53,6 @@ while len(reviews) <100:
         break
     time.sleep(2)
 
-pd.DataFrame(reviews).to_csv('ulasan_gacoan_tanggal.csv', index=False)
-print(f"[INFO] {len(reviews)} ulasan berhasil disimpan ke 'ulasan_gacoan_Tanggal.csv'") 
+pd.DataFrame(reviews).to_csv('ulasan_gacoan_tanggal_jak_boul.csv', index=False)
+print(f"[INFO] {len(reviews)} ulasan berhasil disimpan ke 'ulasan_gacoan_Tanggal_jak_boul.csv'") 
 driver.quit()   
